@@ -10,3 +10,6 @@
 // }
 
 //function: const func= function(){}
+
+//*********Memory**********
+//Stack(Primitive) gets copy , Heap(Non Primitive) gets refrence
