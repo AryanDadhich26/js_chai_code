@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur js</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayDate=setInterval(function(){
+        console.log("Aryan",Date.now())
+    },1000)//=>this event will start after 1 sec and will continue till end infinite time
+    clearInterval(sayDate)
+</script>
+</html>
