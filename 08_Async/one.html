@@ -7,5 +7,19 @@
 </head>
 <body>
     <h1>Chai aur Code</h1>
+    <button id="stop"></button>
 </body>
+<script>
+    // setTimeout(function(){console.log("Aryan")},2000)//=>Aryan will print after 2 secs
+    const sayAryan=function(){console.log("Aryan")}
+    const nametime=setTimeout(sayAryan,2000)//=>Aryan will print after 2 secs
+    // clearTimeout(nametime)//=>methode 1
+    document.querySelector("#stop").addEventListener('click',function () {
+        clearTimeout(nametime)
+        console.log("STOPPED")
+    })
+
+
+
+</script>
 </html>
