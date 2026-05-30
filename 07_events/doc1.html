@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // document.getElementById('owl').onclick=function(){
+    //     alert("owl clicked")
+    // }approach 1 not gives to musch feature access to us
+
+    //attachEvent()=>for internal explorer
+    //type, timestamp, defaultPrevented
+    //target, toElement, srcElement, currentTarget
+    //clientX, clientY, screenX, screenY
+    //altkey, ctrlkey, shiftkey, keyCode
+    const owl=document.getElementById('owl')
+    owl.addEventListener('click',function(e){
+        console.log("clicked inside the ul")
+    },false)
+    //this false here shows bubbling up this is andar s bahar
+    //if this is true it shows  target capturing this is top to bottom or bahar s andar
+    //in funciton e.preventDefault helps in stopping what will happen like clicking a google link will take me to that site but preventDefault will not 
+</script>
+</html>
